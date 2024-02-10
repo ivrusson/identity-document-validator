@@ -1,0 +1,24 @@
+{
+  "name": "identity-document-validator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "husky": "^9.0.10",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2"
+  }
+}
