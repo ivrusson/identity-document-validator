@@ -1,13 +1,15 @@
 {
   "name": "identity-document-validator",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A library for validating ID card numbers.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "build": "tsc",
     "test": "jest"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ivrusson",
   "license": "ISC",
   "husky": {
     "hooks": {
@@ -19,6 +21,7 @@
     "@types/jest": "^29.5.12",
     "husky": "^9.0.10",
     "jest": "^29.7.0",
-    "ts-jest": "^29.1.2"
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.3.3"
   }
 }
