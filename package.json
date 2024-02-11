@@ -4,8 +4,8 @@
   "description": "A library for validating ID card numbers.",
   "type": "module",
   "main": "dist/index.cjs",
-  "module": "dist/index.esm.js",
-  "browser": "dist/index.iife.min.js",
+  "module": "dist/index.js",
+  "browser": "dist/index.global.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
