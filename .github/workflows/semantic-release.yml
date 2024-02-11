@@ -17,10 +17,14 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '20'
+          cache: 'pnpm'
           registry-url: 'https://registry.npmjs.org'
 
-      - name: Install Dependencies
-        run: npm ci
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      - name: Install Dependencies with pnpm
+        run: pnpm install
 
       - name: Semantic Release
         run: npx semantic-release
